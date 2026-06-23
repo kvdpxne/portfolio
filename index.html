@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Łukasz Pietrzak | Portfolio</title>
+    <meta name="description" content="Portfolio Łukasza Pietrzaka, doświadczonego Full-Stack Developera.">
+    <meta name="author" content="Łukasz Pietrzak">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="canonical" href="https://lukaszpietrzak.dev">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:title" content="Łukasz Pietrzak | Portfolio">
+    <meta property="og:description" content="Portfolio Łukasza Pietrzaka, doświadczonego Full-Stack Developera.">
+    <meta property="og:image" content="https://lukaszpietrzak.dev/og-image.jpg">
+    <meta property="og:url" content="https://lukaszpietrzak.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script type="application/ld+json">{"@context":"https://schema.org", "@type":"Person", "name":"Łukasz Pietrzak", "jobTitle":"Full-Stack Developer", "description":"Freelancer Full-Stack Developer z 2-letnim doświadczeniem.", "url":"https://lukaszpietrzak.dev", "email":"me@lukaszpietrzak.dev", "sameAs":["https://github.com/kvdpxne"]}</script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading-active">
+<noscript>
+    <div class="no-js-message">
+        <div>
+            <h1>JavaScript jest wymagany</h1>
+            <p>Ta strona wymaga włączonej obsługi JavaScript do prawidłowego działania. Włącz JavaScript w ustawieniach swojej przeglądarki i odśwież stronę.</p>
+        </div>
+    </div>
+</noscript>
+<a href="#main-content" class="skip-link" aria-label="Przejdź do głównej treści">Przejdź do treści</a>
+<div id="loadingScreen" role="status" aria-live="polite" aria-label="Ładowanie strony">
+    <div style="position:relative;display:flex;align-items:center;justify-content:center;">
+        <div class="loader-ripple"></div><div class="loader-ripple"></div><div class="loader-ripple"></div>
+        <div class="loader-logo" id="loaderLogo">&lt;ŁP /&gt;</div>
+    </div>
+</div>
+<canvas id="particlesCanvas" aria-hidden="true"></canvas>
+<div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+<nav class="navbar" id="navbar" role="navigation" aria-label="Nawigacja główna">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Łukasz Pietrzak - strona główna">&lt;ŁP /&gt;</a>
+        <ul class="nav-links" id="navLinks" role="list">
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#career">Kariera</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#case-study">Case Study</a></li>
+            <li><a href="#contact" class="nav-cta">Kontakt</a></li>
+            <li class="theme-row">
+              <button class="theme-toggle" id="flagPL" aria-label="Polska flaga" title="Język polski">
+                <span aria-hidden="true">🇵🇱</span>
+              </button>
+              <button class="theme-toggle" id="themeToggle" aria-label="Przełącz na jasny motyw">
+                <span id="themeIcon" aria-hidden="true">🌙</span>
+              </button>
+            </li>
+        </ul>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main id="main-content">
+    <section class="hero-section" id="hero" aria-label="Sekcja powitalna">
+        <div class="hero-container">
+            <div>
+                <div class="hero-badge" aria-label="Status: dostępny do współpracy">🚀 Freelancer • dostępny do współpracy</div>
+                <h1 class="hero-title">Tworzę <span class="highlight">aplikacje</span>, które robią wrażenie</h1>
+                <p class="hero-desc">Cześć! Jestem Łukasz, Full-Stack Developer z 2-letnim doświadczeniem komercyjnym. Specjalizuję się w budowaniu wydajnych, skalowalnych i pięknych aplikacji webowych od koncepcji po wdrożenie.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">📂 Zobacz projekty</a>
+                    <a href="#contact" class="btn btn-outline">💬 Porozmawiajmy</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-wrapper">
+                    <div class="avatar-ring" aria-hidden="true"></div><div class="avatar-ring" aria-hidden="true"></div>
+                    <div class="avatar-circle" role="img" aria-label="Awatar programisty"><span class="avatar-emoji">👨‍💻</span></div>
+                    <div class="floating-tag react" aria-hidden="true">⚛️ React</div>
+                    <div class="floating-tag node" aria-hidden="true">🟢 Node.js</div>
+                    <div class="floating-tag typescript" aria-hidden="true">💙 TypeScript</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" aria-label="O mnie">
+        <div class="section-container">
+            <div class="section-label animate-on-scroll"><span aria-hidden="true"></span>O mnie</div>
+            <h2 class="section-title animate-on-scroll">Kod to moja pasja,<br>design to moja obsesja</h2>
+            <div class="about-grid">
+                <div class="about-text" id="aboutTextContainer"></div>
+                <div class="about-stats" id="aboutStatsContainer"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="career" aria-label="Ścieżka zawodowa">
+        <div class="section-container">
+            <div class="section-label animate-on-scroll"><span aria-hidden="true"></span>Ścieżka zawodowa</div>
+            <h2 class="section-title animate-on-scroll">Od nauki do własnej ścieżki, moja droga w IT</h2>
+            <div class="timeline" id="timelineContainer"></div>
+        </div>
+    </section>
+
+    <section id="skills" aria-label="Umiejętności techniczne">
+        <div class="section-container">
+            <div class="section-label animate-on-scroll"><span aria-hidden="true"></span>Technologie</div>
+            <h2 class="section-title animate-on-scroll">Narzędzia, którymi władam</h2>
+            <p class="skills-desc animate-on-scroll">Wybieram najlepsze technologie do każdego zadania. Oto mój obecny stack technologiczny:</p>
+            <div class="skills-grid" id="skillsContainer"></div>
+        </div>
+    </section>
+
+    <section id="projects" aria-label="Wybrane projekty">
+        <div class="section-container">
+            <div class="section-label animate-on-scroll"><span aria-hidden="true"></span>Portfolio</div>
+            <h2 class="section-title animate-on-scroll">Wybrane projekty</h2>
+            <p class="skills-desc animate-on-scroll" style="margin-bottom:40px;text-align:left;max-width:none;margin-left:0;margin-right:0;">Każdy z tych projektów to dowód mojej pasji do czystego kodu i efektywnego designu, od architektury po finalny deployment. Zobacz, co udało mi się zrealizować w ciągu ostatnich 2 lat pracy jako freelancer.</p>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <section id="case-study" aria-label="Case Study – Portfolio Łukasza Pietrzaka">
+      <div class="section-container" id="caseStudyContainer">
+        <div class="case-study-placeholder" style="text-align:center;padding:60px 0;color:var(--text-secondary);opacity:0.7;">
+          🔍 Ładowanie case study…
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Kontakt">
+        <div class="contact-decor contact-decor-1" aria-hidden="true"></div>
+        <div class="contact-decor contact-decor-2" aria-hidden="true"></div>
+        <div class="section-container">
+            <div class="section-label animate-on-scroll"><span aria-hidden="true"></span>Kontakt</div>
+            <h2 class="section-title animate-on-scroll">Zbudujmy coś razem</h2>
+            <p class="skills-desc animate-on-scroll" style="margin-bottom:40px;">Szukasz developera do swojego projektu? A może po prostu chcesz pogadać o tech? Jestem otwarty na nowe możliwości!</p>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll-x">
+                    <h3>Porozmawiajmy</h3>
+                    <p>Masz pomysł na projekt? Potrzebujesz konsultacji technicznej? A może po prostu chcesz się przywitać? Napisz do mnie, odpowiadam w ciągu 24 godzin.</p>
+                    <div class="contact-detail"><div class="icon-circle" aria-hidden="true">📧</div><a href="mailto:me@lukaszpietrzak.dev" class="contact-link">me@lukaszpietrzak.dev</a></div>
+                    <div class="contact-detail"><div class="icon-circle" aria-hidden="true">📍</div><span>Warszawa, Polska (praca zdalna)</span></div>
+                    <div class="contact-detail"><div class="icon-circle" aria-hidden="true">🕐</div><span>Dostępny: Pon-Pt, 9:00-18:00 CET</span></div>
+                    <div class="social-links">
+                        <a href="https://github.com/kvdpxne" class="social-link" title="GitHub" aria-label="Profil GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                        <a href="#" class="social-link" title="LinkedIn" aria-label="Profil LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" class="social-link" title="Twitter/X" aria-label="Profil Twitter/X"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll-x" style="transform:translateX(30px);">
+                    <form class="contact-form" id="contactForm" novalidate aria-label="Formularz kontaktowy">
+                        <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+                        <div class="form-group"><label for="name">Imię i nazwisko</label><input type="text" id="name" name="name" placeholder="Jan Kowalski" required minlength="2" aria-required="true" aria-describedby="nameError" autocomplete="name"><div class="error-msg" id="nameError" role="alert">Proszę podać imię i nazwisko (min. 2 znaki).</div></div>
+                        <div class="form-group"><label for="email">Adres e-mail</label><input type="email" id="email" name="email" placeholder="jan@example.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" aria-required="true" aria-describedby="emailError" autocomplete="email"><div class="error-msg" id="emailError" role="alert">Proszę podać prawidłowy adres e-mail.</div></div>
+                        <div class="form-group">
+                          <label for="message">Wiadomość</label>
+                          <textarea id="message" name="message" placeholder="Opisz swój projekt lub pomysł..." required minlength="10" maxlength="1500" aria-required="true" aria-describedby="messageError" autocomplete="off"></textarea>
+                          <div class="error-msg" id="messageError" role="alert">Wiadomość musi mieć co najmniej 10 znaków.</div>
+                        </div>
+                        <button type="submit" class="btn-submit">✉️ Wyślij wiadomość</button>
+                        <div class="form-success" id="formSuccess" role="status" aria-live="polite">✅ Wiadomość wysłana! Dziękuję, odezwę się wkrótce.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer role="contentinfo" aria-label="Stopka">
+    <p>&copy; <span id="currentYear"></span> Łukasz Pietrzak. Wszelkie prawa zastrzeżone. Zaprojektowane i zakodowane z ❤️</p>
+    <p class="footer-source">Kod strony open source <a href="https://github.com/kvdpxne/portfolio" target="_blank" rel="noopener noreferrer">zobacz repozytorium na GitHubie</a></p>
+</footer>
+
+<script src="js/bundle.js" defer></script>
+</body>
+</html>

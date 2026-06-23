@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "My portfolio website – static HTML, CSS and JavaScript",
+  "author": "kvdpxne",
+  "license": "WTFPL",
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "start": "gulp build"
+  },
+  "devDependencies": {
+    "del": "^8.0.1",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-jsonminify": "^1.1.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-terser": "^2.1.0"
+  }
+}
