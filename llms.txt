@@ -1,0 +1,36 @@
+# Łukasz Pietrzak — Full-Stack Developer Portfolio
+
+> Modern, accessible, and high-performance portfolio website showcasing my skills as a Full-Stack Developer. Built with vanilla JavaScript, CSS custom properties, and a service worker. Lighthouse scores: Performance 100, Accessibility 100, Best Practices 100, SEO 100.
+
+Key details about the site owner:
+- Name: Łukasz Pietrzak
+- Role: Full-Stack Developer with 2+ years of commercial experience
+- Email: me@lukaszpietrzak.dev
+- Location: Warsaw, Poland (remote work)
+- GitHub: https://github.com/kvdpxne
+- LinkedIn: https://linkedin.com/in/kvdpxne
+- Twitter/X: https://twitter.com/kvdpxne
+
+The website is a single-page application with all content dynamically rendered. Navigation uses hash-based routing (#section-name). A dark/light theme toggle is available, with preference stored in localStorage. The site requires JavaScript to function properly.
+
+## Structure
+
+- [Hero section](https://lukaszpietrzak.dev/#hero): Introduction with call-to-action buttons (projects, contact)
+- [About](https://lukaszpietrzak.dev/#about): Personal introduction with statistics (2+ years experience, 15+ projects, 10+ clients)
+- [Career](https://lukaszpietrzak.dev/#career): Timeline showing professional journey (6 entries, descriptions visible on hover)
+- [Skills](https://lukaszpietrzak.dev/#skills): Technology stack with proficiency levels (25 technologies, from Expert to Basics)
+- [Projects](https://lukaszpietrzak.dev/#projects): Portfolio projects with lazy-loaded cards (ShopFlow, DataViz, AI Writer, Portfolio)
+- [Case Study](https://lukaszpietrzak.dev/#case-study): Detailed breakdown of this portfolio website's development process (lazy-loaded)
+- [Contact](https://lukaszpietrzak.dev/#contact): Contact form with client-side validation and honeypot spam protection
+
+## Technical Details
+
+- [GitHub Repository](https://github.com/kvdpxne/portfolio): Complete source code with modular JavaScript architecture
+- [Style System](https://github.com/kvdpxne/portfolio/blob/main/css/style.css): CSS custom properties with dark/light theme support
+- [Service Worker](https://github.com/kvdpxne/portfolio/blob/main/sw.js): Offline support with cache-first strategy
+- [Web Manifest](https://github.com/kvdpxne/portfolio/blob/main/manifest.webmanifest): PWA configuration
+
+## Optional
+
+- [Blog](https://blog.pietrzak.dev): Personal technical blog (external site)
+- [Interests](https://interests.pietrzak.dev): Personal interests page (external site)

@@ -96,6 +96,7 @@ function sitemap() {
 function copyStatic() {
   return gulp.src([
     'robots.txt',
+    'llms.txt',
     'favicon-32x32.png',
     'favicon-16x16.png',
     'favicon.ico',
@@ -120,5 +121,6 @@ exports.sw = sw;
 exports.manifest = manifest;
 exports.sitemap = sitemap;
 exports.copyStatic = copyStatic;
+
 exports.build = build;
 exports.default = build;
