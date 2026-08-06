@@ -1,5 +1,5 @@
 const aboutTexts = [
-  "Od 2022 roku działam jako freelancer, stale rozwijając swoje umiejętności. Przez ostatnie 2 lata zrealizowałem kilkanaście projektów dla klientów z różnych branż, od startupów po e-commerce.",
+  "Od 2024 roku działam jako freelancer, stale rozwijając swoje umiejętności. Przez ostatnie 2 lata zrealizowałem kilkanaście projektów dla klientów z różnych branż, od startupów po e-commerce.",
   "Wierzę, że świetny kod to nie tylko działająca funkcjonalność, ale także czytelność, wydajność i wyjątkowe doświadczenie użytkownika. Każdy projekt traktuję jak własny produkt, dbając o każdy detal od architektury po mikrointerakcje.",
   "Poza ekranem jestem pasjonatem motoryzacji i majsterkowania przy niej. Uwielbiam spędzać czas w garażu, naprawiając i ulepszając swoje auto. To hobby nauczyło mnie cierpliwości i kreatywnego rozwiązywania problemów, co bezpośrednio przekłada się na jakość mojego kodu. ☕🔧"
 ];
@@ -12,11 +12,11 @@ const statsData = [
 ];
 
 const timelineData = [
-  { d: '2022', r: 'Początki nauki programowania', c: 'Samodzielna nauka', desc: 'Intensywny kurs HTML, CSS i JavaScript. Pierwsze projekty, budowanie fundamentów wiedzy i odkrywanie pasji do frontendu. Ukończenie bootcampu online i setki godzin spędzonych na dokumentacji.' },
-  { d: '2022 / 2023', r: 'Staż i praktyki', c: 'Lokalna agencja interaktywna', desc: 'Trzymiesięczny staż, podczas którego pracowałem przy realnych projektach komercyjnych. Poznałem pracę w zespole Scrum, Git, code review i nauczyłem się korzystać z Jiry.' },
-  { d: '2023 / Teraz', r: 'Freelancing', c: 'Własna działalność', desc: 'Równolegle ze stażem zacząłem przyjmować pierwsze zlecenia jako freelancer. Od tego czasu nieprzerwanie realizuję projekty dla klientów z Polski i zagranicy. Specjalizuję się w React, Node.js i TypeScript.' },
-  { d: '2023', r: 'Junior IT Specialist', c: 'CorpTech Sp. z o.o.', desc: 'Dołączyłem do działu IT jako specjalista ds. rozwoju aplikacji wewnętrznych. Odpowiadałem za utrzymanie i rozwój systemów intranetowych opartych o React i Node.js.' },
-  { d: '2024 / Obecnie', r: 'Junior Developer', c: 'CorpTech Sp. z o.o. (awans)', desc: 'Awansowałem na stanowisko Junior Developera. Obecnie projektuję i wdrażam nowe funkcjonalności, biorę udział w planowaniu architektury oraz mentoruję nowych stażystów.' },
+  { d: '2017 / 2018', r: 'Początki nauki programowania', c: 'Samodzielna nauka', desc: 'Intensywny kurs HTML, CSS i JavaScript. Pierwsze projekty, budowanie fundamentów wiedzy i odkrywanie pasji do frontendu. Ukończenie bootcampu online i setki godzin spędzonych na dokumentacji.' },
+  { d: '2019 / 2020', r: 'Staż i praktyki', c: 'Lokalna agencja interaktywna', desc: 'Trzymiesięczny staż, podczas którego pracowałem przy realnych projektach komercyjnych. Poznałem pracę w zespole Scrum, Git, code review i nauczyłem się korzystać z Jiry.' },
+  { d: '2024 / Obecnie', r: 'Freelancing', c: 'Własna działalność', desc: 'Równolegle ze stażem zacząłem przyjmować pierwsze zlecenia jako freelancer. Od tego czasu nieprzerwanie realizuję projekty dla klientów z Polski i zagranicy. Specjalizuję się w React, Node.js i TypeScript.' },
+  { d: '2025', r: 'Junior IT Helpdesk Specialist', c: 'REDATS Sp. z o.o.', desc: 'Odpowiadałem za bieżące wsparcie użytkowników i rozwiązywanie zgłoszeń, co pozwoliło mi dogłębnie zrozumieć ich oczekiwania oraz codzienne problemy. Dbałem o sprawną komunikację i usprawnianie wewnętrznych procesów IT.' },
+  { d: '2026', r: 'Junior Developer', c: 'REDATS Sp. z o.o. (awans)', desc: 'Awansowałem na stanowisko Junior Developera. Projektowałem i wdrażałem nowe funkcjonalności, brałem udział w planowaniu architektury, samodzielnie wdrażałem zmiany na środowisko produkcyjne oraz odpowiadałem za uruchamianie i utrzymanie własnych aplikacji.' },
   { d: 'Przyszłość', r: 'Co dalej?', c: 'Twoja firma? ✨', desc: 'Moja droga w IT dopiero nabiera tempa. Chcę rozwijać się w kierunku Full-Stack Developera, eksplorować świat architektury mikroserwisowej i DevOps. Jeśli szukasz osoby, która kocha to co robi i stale chce się uczyć, porozmawiajmy!', future: true }
 ];
 

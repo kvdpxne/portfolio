@@ -28,17 +28,7 @@ function compileCSS() {
 }
 
 function compileJS() {
-  return gulp.src([
-    'js/data.js',
-    'js/components.js',
-    'js/projects.js',
-    'js/case-study.js',
-    'js/form.js',
-    'js/navbar.js',
-    'js/particles.js',
-    'js/theme.js',
-    'js/main.js'
-  ])
+  return gulp.src('js/*.js')
     .pipe(concat('bundle.js'))
     .pipe(terser())
     .pipe(new Transform({
@@ -59,7 +49,7 @@ function html() {
 
         html = html.replace(/<link[^>]*rel="stylesheet"[^>]*>/gi, '');
         html = html.replace('</head>', `<style>${cssContent}</style></head>`);
-        html = html.replace(/<script[^>]*src="[^"]*bundle\.js"[^>]*>[\s\S]*?<\/script>/gi, '');
+        html = html.replace(/<script[^>]*src="[^"]*main\.js"[^>]*>[\s\S]*?<\/script>/gi, '');
         html = html.replace('</body>', `<script>${jsContent}</script></body>`);
 
         file.contents = Buffer.from(html);
@@ -103,6 +93,7 @@ function copyStatic() {
     'apple-touch-icon.png',
     'android-chrome-512x512.png',
     'android-chrome-192x192.png',
+    'og-image.png',
     'netlify.toml'
   ], { encoding: false }).pipe(gulp.dest('dist'));
 }
