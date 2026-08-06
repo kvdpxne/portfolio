@@ -28,7 +28,17 @@ function compileCSS() {
 }
 
 function compileJS() {
-  return gulp.src('js/*.js')
+  return gulp.src([
+    'js/data.js',
+    'js/components.js',
+    'js/projects.js',
+    'js/case-study.js',
+    'js/form.js',
+    'js/navbar.js',
+    'js/particles.js',
+    'js/theme.js',
+    'js/main.js'
+  ])
     .pipe(concat('bundle.js'))
     .pipe(terser())
     .pipe(new Transform({
