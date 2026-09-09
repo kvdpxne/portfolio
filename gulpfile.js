@@ -104,8 +104,9 @@ function copyStatic() {
     'android-chrome-512x512.png',
     'android-chrome-192x192.png',
     'og-image.png',
-    'netlify.toml'
-  ], { encoding: false }).pipe(gulp.dest('dist'));
+    'netlify.toml',
+    'netlify/**'
+  ], { base: '.', encoding: false }).pipe(gulp.dest('dist'));
 }
 
 const build = gulp.series(

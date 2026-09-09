@@ -173,18 +173,39 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper animate-on-scroll-x" style="transform:translateX(30px);">
-                    <form class="contact-form" id="contactForm" novalidate aria-label="Formularz kontaktowy">
-                        <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
-                        <div class="form-group"><label for="name">Imię i nazwisko</label><input type="text" id="name" name="name" placeholder="Jan Kowalski" required minlength="2" aria-required="true" aria-describedby="nameError" autocomplete="name"><div class="error-msg" id="nameError" role="alert">Proszę podać imię i nazwisko (min. 2 znaki).</div></div>
-                        <div class="form-group"><label for="email">Adres e-mail</label><input type="email" id="email" name="email" placeholder="jan@example.com" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" aria-required="true" aria-describedby="emailError" autocomplete="email"><div class="error-msg" id="emailError" role="alert">Proszę podać prawidłowy adres e-mail.</div></div>
-                        <div class="form-group">
-                          <label for="message">Wiadomość</label>
-                          <textarea id="message" name="message" placeholder="Opisz swój projekt lub pomysł..." required minlength="10" maxlength="1500" aria-required="true" aria-describedby="messageError" autocomplete="off"></textarea>
-                          <div class="error-msg" id="messageError" role="alert">Wiadomość musi mieć co najmniej 10 znaków.</div>
-                        </div>
-                        <button type="submit" class="btn-submit">✉️ Wyślij wiadomość</button>
-                        <div class="form-success" id="formSuccess" role="status" aria-live="polite">✅ Wiadomość wysłana! Dziękuję, odezwę się wkrótce.</div>
-                    </form>
+                  <form class="contact-form" id="contactForm" novalidate aria-label="Formularz kontaktowy">
+                    <div class="honeypot" aria-hidden="true">
+                      <label for="website">Website</label>
+                      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Imię i nazwisko</label>
+                      <input type="text" id="name" name="name" placeholder="Jan Kowalski" required minlength="2" aria-required="true" aria-describedby="nameError" autocomplete="name">
+                      <div class="error-msg" id="nameError" role="alert">Proszę podać imię i nazwisko (min. 2 znaki).</div>
+                    </div>
+
+    <div class="form-group">
+        <label for="email">Adres e-mail</label>
+        <input type="email" id="email" name="email" placeholder="jan@example.com" required
+               pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+               aria-required="true" aria-describedby="emailError" autocomplete="email">
+        <div class="error-msg" id="emailError" role="alert">Proszę podać prawidłowy adres e-mail.</div>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Wiadomość</label>
+        <textarea id="message" name="message" placeholder="Opisz swój projekt lub pomysł..." required
+                  minlength="10" maxlength="1500" aria-required="true"
+                  aria-describedby="messageError" autocomplete="off"></textarea>
+        <div class="error-msg" id="messageError" role="alert">Wiadomość musi mieć co najmniej 10 znaków.</div>
+    </div>
+
+    <button type="submit" class="btn-submit">✉️ Wyślij wiadomość</button>
+
+    <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+        ✅ Wiadomość wysłana! Dziękuję, odezwę się wkrótce.
+    </div>
+</form>
                 </div>
             </div>
         </div>
