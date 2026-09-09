@@ -1,4 +1,4 @@
-export function initContactForm() {
+function initContactForm() {
     const form = document.getElementById('contactForm');
     const success = document.getElementById('formSuccess');
     const nameInp = document.getElementById('name');
