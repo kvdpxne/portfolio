@@ -1,5 +1,3 @@
-import { Context } from "@netlify/edge-functions";
-
 export default async (request, context) => {
     if (request.method !== 'POST') {
         return new Response(JSON.stringify({ message: 'Method not allowed' }), {
